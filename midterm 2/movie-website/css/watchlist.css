@@ -1,0 +1,58 @@
+* {
+  color: black;
+}
+h1,
+p {
+  text-align: center;
+}
+#watchlist-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.watchlist-table-header,
+.movie-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  text-align: center;
+}
+
+.movie-row img {
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+  border-radius: 8px;
+}
+
+.movie-row h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.movie-row p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.remove-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.remove-button:hover {
+  background-color: #e60000;
+}
+.details-header {
+  padding: 15px 0 0 20px;
+}

@@ -1,0 +1,91 @@
+/* Header and navigation bar styling */
+header {
+  width: 100%;
+  background-color: hsl(310, 56%, 63%);
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: yellow;
+}
+/* Style for all buttons */
+button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+/* "View Recipe" button styling */
+.view-recipe {
+  background-color: #4caf50; /* Green */
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-recipe:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* "Add to Favorites" button styling */
+.add-to-favorites {
+  background-color: #ffa500; /* Orange */
+  color: white;
+  margin-top: 10px;
+}
+
+.add-to-favorites:hover {
+  background-color: #ff8c00; /* Darker orange on hover */
+}
+
+/* "Remove" button styling */
+button.remove {
+  background-color: #ff6347; /* Red */
+  color: white;
+  margin-top: 10px;
+}
+
+button.remove:hover {
+  background-color: #ff4500; /* Darker red on hover */
+}
+
+/* Recipe card styling for uniform look */
+.recipe-item {
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  color: #333333;
+  background-color: #efebe9;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.recipe-item:hover {
+  transform: scale(1.05);
+}
+#favorites-list {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 24px;
+}

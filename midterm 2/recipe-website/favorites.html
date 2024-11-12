@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Recipes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <script
+      src="https://kit.fontawesome.com/43b24777a0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Add a back link to go back to the home page -->
+    <header>
+      <nav>
+        <a href="index.html">Back to Home</a>
+      </nav>
+    </header>
+
+    <h1>Your Favorite Recipes</h1>
+    <div id="favorites-list"></div>
+    <div id="recipe-details">
+        <div id="statusBar">
+          <span>
+            <i
+              id="close-button"
+              onclick="closeRecipeDetails()"
+              class="fas fa-window-close"
+            ></i>
+          </span>
+        </div>
+        <div id="recipe-content"></div>
+    <script src="favorites.js"></script>
+  </body>
+</html>

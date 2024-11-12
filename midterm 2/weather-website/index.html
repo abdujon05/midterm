@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/43b24777a0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <label class="switch">
+          <input type="checkbox" id="unit-toggle" />
+          <span class="slider round"></span>
+          <span class="temp-label fahrenheit">°F</span>
+          <span class="temp-label celsius">°C</span>
+        </label>
+        <h1>Weather App</h1>
+        <!-- Toggle Button for Celsius/Fahrenheit -->
+        <label class="gps-button" id="gpsButton">
+          <input type="checkbox" id="geo-btn" class="gps-checkbox" />
+          <i id="gpsIcon" class="fa-solid fa-location-dot"></i>
+          <!-- Initial icon (unchecked state) -->
+        </label>
+      </header>
+      <!-- Search Input -->
+      <form action="">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="search-btn">Search</button>
+      </form>
+      <div class="error">
+        <p>Invalid user input</p>
+      </div>
+      <!-- Current Weather Display -->
+      <div id="current-weather">
+        <h2 id="weather-desc">Sunny</h2>
+        <img id="weather-icon" src="images/clear.png" />
+        <p id="current-temp">22°C</p>
+        <p class="location">Dushanbe</p>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" />
+            <div>
+              <p class="wind">10 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+        <!-- 5-Day Forecast -->
+        <div id="forecast">
+          <h2>6-Day Forecast</h2>
+          <div id="forecast-data"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

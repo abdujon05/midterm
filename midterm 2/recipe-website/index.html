@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <script
+      src="https://kit.fontawesome.com/43b24777a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Recipe App</title>
+  </head>
+  <body>
+    <!-- Add navigation bar with link to Favorites -->
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="favorites.html">Favorites</a>
+      </nav>
+    </header>
+
+    <h1>Recipe Finder</h1>
+    <form id="search-form">
+      <input type="text" id="query" placeholder="Search for recipes ... " />
+      <button id="search-button" onclick="searchRecipes()">Search</button>
+    </form>
+    <div id="results"></div>
+    <div id="recipe-details">
+      <div id="statusBar">
+        <span>
+          <i
+            id="close-button"
+            onclick="closeRecipeDetails()"
+            class="fas fa-window-close"
+          ></i>
+        </span>
+      </div>
+      <div id="recipe-content"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="common.js"></script>
+  </body>
+</html>
