@@ -1,5 +1,5 @@
 const apiKey = "b5347fc6b089496887ed2ce2f554169d";
-const apiUrl = "https://api.spoonacular.com/recipes/complexSearch?&number=1";
+const apiUrl = "https://api.spoonacular.com/recipes/complexSearch?&number=10";
 const form = document.querySelector("form");
 const input = document.querySelector("input");
 
